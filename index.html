@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepsis Watch</title>
+    <style>
+      html {
+            font-size: 1.4rem
+        }
+        body {
+            margin: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+      <diagram-over-time
+        data-label="Herzschläge/Minute in den letzten 6 Stunden"
+        data-value-name="Herzschläge/Minute"
+        data-good-value-min="65"
+        data-good-value-max="100"
+        data-observations="100000:66 200000:89 300000:113 400000:104"
+      >
+      </diagram-over-time>
+      <diagram-over-time
+        data-label="Atemzüge/Minute in den letzten 6 Stunden"
+        data-value-name="Atemzüge/Minute"
+        data-good-value-min="21"
+        data-good-value-max="26"
+        data-observations="100000:19 200000:24 300000:31 400000:30"
+      >
+      </diagram-over-time>
+      <diagram-over-time
+        data-label="Körpertemperatur in °C (eigene Messung) in den letzten 24 Stunden"
+        data-value-name="Körpertemperatur in °C"
+        data-good-value-min="36.5"
+        data-good-value-max="38"
+        data-observations="100000:38.5 200000:36 300000:36.3 400000:36.9"
+      >
+      </diagram-over-time>
+      <diagram-over-time
+        data-label="Befinden (Selbsteinschätzung) in den letzten 24 Stunden"
+        data-value-name="Befinden (prozentual)"
+        data-good-value-min="0.48"
+        data-good-value-max="1"
+        data-observations="100000:0.2 200000:0.4 300000:0.7 400000:0.6"
+      >
+      </diagram-over-time>
+    </main>
+    <script type="module" src="./src/index.js"></script>
+  </body>
+</html>
