@@ -1,0 +1,13 @@
+{
+    "type": "module",
+    "devDependencies": {
+        "gh-pages": "^6.1.1",
+        "vite": "^5.1.2",
+        "vite-plugin-elm-watch": "^1.3.2"
+    },
+    "homepage": "https://lue-bird.github.io/sepsis-watch-web-ui-prototype/",
+    "scripts": {
+        "predeploy": "vite build",
+        "deploy": "gh-pages -d dist"
+    }
+}
